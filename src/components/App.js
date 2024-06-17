@@ -2,6 +2,8 @@ import video from "../data/video.js";
 
 import React, { useState } from "react";
 
+import CommentList from './CommentList.js'
+
 function App() {
 
   const [upVotes, setUpVotes] = useState(video.upvotes)
@@ -31,6 +33,7 @@ function App() {
       <p>{video.views} Views | Uploaded {video.createdAt}</p>
       <button onClick={onUpVote}>{upVotes} 👍</button>
       <button onClick={onDownVote}>{downVotes} 👎</button>
+      <CommentList comments={video.comments}/>
     </div>
   );
 }
