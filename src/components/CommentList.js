@@ -17,12 +17,12 @@ function CommentList({ comments }) {
 
   function addNewComment(event) {
     event.preventDefault()
-    const newCommentList = ({
+    const newCommentItem = ({
       id: uuid(),
       user: `User ${uuid().slice(1,8)}`,
       comment: newComment
     })
-    setCommentList([...commentList, newCommentList])
+    setCommentList([...commentList, newCommentItem])
   }
 
   return (
