@@ -10,3 +10,29 @@ body {
 .App {
   text-align: center;
 }
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+
+.center-comment-section{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.comment-container {
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
