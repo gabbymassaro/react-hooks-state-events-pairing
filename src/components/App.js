@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import CommentList from './CommentList.js'
 
 function App() {
-
   const [upVotes, setUpVotes] = useState(video.upvotes)
   const [downVotes, setDownVotes] = useState(video.downvotes)
 
