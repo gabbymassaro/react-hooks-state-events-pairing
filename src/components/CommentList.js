@@ -19,7 +19,7 @@ function CommentList({ comments }) {
     event.preventDefault()
     const newCommentList = ({
       id: uuid(),
-      user: `User ${uuid()}`,
+      user: `User ${uuid().slice(1,8)}`,
       comment: newComment
     })
     setCommentList([...commentList, newCommentList])
